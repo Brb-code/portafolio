@@ -1,0 +1,148 @@
+body {height: 100%;
+    font-family: 'Abel';
+    background-image: url('../../images/sunset-hd-background-photos-12-scaled.jpg'); 
+    padding: 0; 
+    margin: 0;
+}
+
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 1100px;
+    height: 100%;
+    background-color: white;
+}
+.fa-ul {
+    margin-left: 15px;
+}
+.left-content {
+    width: 250px;
+    padding: 20px;
+    background-color: rgb(207, 184, 165);
+    word-wrap: anywhere;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.left-content > .photo {
+    margin: auto;
+    display: block;
+    background-color: white;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.left-content h4 {
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+.bar-content .bar{
+    height: 2px;
+    background-color: black;
+}
+.bar-content .position{
+    position: relative;
+    top: -10px;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+p , li{
+    font-size: 14px;
+    color: rgb(41, 39, 39);
+    margin: 8px;
+}
+.aficiones {
+    margin-top: 20px;
+    text-align: center;
+}
+.content {
+    padding-left: 0px;
+    padding-right: 25px;
+    width: 730px;
+}
+.content .head-content p {
+    color: rgb(163, 161, 161);
+    font-size: 15px;
+} 
+.content .head-content {
+    padding: 20px;
+    background-color: rgb(27, 25, 25);
+    color: white;
+    text-align: center;
+}
+/*contenido principal*/
+.head-content .graduation {
+    display: inline-block;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border: white 1px solid;
+}
+.head-content .graduation i {
+    transform: rotate(-45deg) translate(-3px, 0px);
+    
+}
+.content .description {
+    padding: 20px 0px 20px 0px;
+}
+.content h4 {
+    background-color: rgb(27, 25, 25);
+    padding: 5px;
+    color:white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.content .academic {
+    background-repeat: no-repeat;
+    background-image:
+    linear-gradient(to right, rgba(207, 184, 165, 1), rgba(207, 184, 165, .8),rgba(207, 184, 165, 0)),
+    url('../../images/academic.jpg');
+    background-position-x: right;
+    background-size: contain;
+}
+.content .academic div {
+    padding: 20px;
+}
+.exp {
+    text-align: center;
+}
+.exp > div {
+    padding-top: 20px;
+}
+.separator {
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+}
+.separator div {
+    width: 20px;
+    height: 20px;
+    border: black 2px solid;
+    background-color: white;
+    margin: auto;
+    transform: translate(0px, -10px) rotate(-45deg) ;
+}
+h5 {
+    padding: 0%;
+    margin: 0%;
+}
+cite {
+    font-size: 13px;
+}
