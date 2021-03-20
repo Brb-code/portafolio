@@ -10,3 +10,8 @@ Estos proyectos son base fundamental para el know-how de otros estudiantes y apa
 - _Sistema web, reportes, repositorio de los proyectos._
 - **Reportes de avance y registro de proyectos**
 - **Buscador y adjuntar documentación del proyecto.**
+
+## Casos de uso
+![Caso de uso del sistema](CasoDeUso.png)
+## Maqueta del proyecto
+![Maqueta front End del sistema](Maqueta.png)
