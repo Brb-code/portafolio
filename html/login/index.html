@@ -19,8 +19,28 @@
                     <div class="col s12">
                         <span class="card-title">Inicio de sesión</span>
                         <p>
-                            <button>Gmail</button>
-                            <button>Facebook</button>
+                            <form onsubmit="login(event)">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="usuario" type="text" class="validate" required pattern="[a-z]{1-5}">
+                                        <label for="usuario">Usuario</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="contraseña" type="password" class="validate" required>
+                                        <label for="contraseña">Contraseña</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m4">
+                                        <button type="submit" class="btn primary">Ingresar</button>
+                                    </div>
+                                    <div class="col s12 m8">
+                                        <button class="btn link">Olvide mi contraseña</button>
+                                    </div>
+                                </div>
+                            </form>
                         </p>
                     </div>
                 </div>
@@ -29,5 +49,29 @@
     </div>    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script type="text/javascript">
+        function login(event){
+            event.preventDefault();
+            console.log("Iniciando login")
+            let vusuario = document.getElementById("usuario").value;
+            let vcontraseña = document.getElementById("contraseña").value;
+            let datos = {
+                usuario: vusuario,
+                password: vcontraseña
+            }
+            fetch('./../../fake/login.json',{
+                method:'GET',
+                //body: JSON.stringify(datos)
+            })
+            .then(resp => resp.json())
+            .then(respuesta => {
+                console.log(respuesta)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        }
+    </script>
 </body>
 </html>

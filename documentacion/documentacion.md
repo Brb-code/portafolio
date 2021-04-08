@@ -15,3 +15,44 @@ Estos proyectos son base fundamental para el know-how de otros estudiantes y apa
 ![Caso de uso del sistema](CasoDeUso.png)
 ## Maqueta del proyecto
 ![Maqueta front End del sistema](Maqueta.png)
+
+## Servicios
+Ruta: misistema.com/api/v1
+
+Obtiene a todos los usuarios.
+|Verbo| GET |
+|------|-------|
+|Endpoint| /usuario |
+|Body| Vacio|
+|Respuesta| 200 OK [ {id:Number nombre:string,correo:string}, {id:Number, nombre:string,correo:string}] |
+
+Inserta un usuario
+|Verbo| POST |
+|-----|------|
+|Endpoint| /usuario|
+| Body |{ nombre:string, correo:string }
+|Respuesta | 200 OK {id:Number} |
+
+
+
+
+GET /usuario/:id
+
+**Body**
+Vacio
+
+**Respuesta**
+200 OK
+{id:Number,nombre:string,correo:string,createdAT:Datetime}
+
+Login del usuario
+|Verbo|POST |
+|-----|-----|
+|Endpoint| /login|
+|Body|{ usuario:string, contrasena: string }|
+|Respuesta|200 OK { token:string} 404 Bad {mensaje:"Debe de introducir el usuario y la contraseña."}|
+
+
+
+## Url del repositorio
+https://github.com/Brb-code/portafolio
