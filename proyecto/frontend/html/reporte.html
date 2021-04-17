@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gimnasio</title>
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link type="text/css" rel="stylesheet" href="../css/menu.css"/>
+    <style>
+    
+        header, main, footer,.content {
+          padding-left: 300px;
+        }
+    
+        @media only screen and (max-width : 992px) {
+          header, main, footer,.content {
+            padding-left: 0;
+          }
+        }
+      </style>
+</head>
+<body>
+    <nav class=" grey darken-4">
+      <div class="nav wrapper">
+        <div class="container">
+            <a href="" class="brand-logo center center-align">Reportes de Inscripción</a>
+            <a href="" class="button-collapse show-on-large" data-activates="sidenav"><i class="material-icons">menu</i></a>
+            <ul class="right collection hide-on-small-and-down" style="margin:0px;border: 0px solid transparent">
+            <li class="collection-item avatar" style="background-color: transparent;min-height: 60px;">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="side-nav fixed" id="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../img/slider1.jpg" alt="" class="responsive-img">
+                </div>
+                <a href=""><img src="../img/perfil.jpeg" alt="" class="circle"></a>
+                <a href=""><span class="white-text name">Jimmy Calderon</span></a>
+                <a href=""><span class="white-text email">jimmycalderonjoel@gmail.com</span></a>
+            </div>
+        </li>
+
+        <li>
+          <a href="../html/notificacion.html"><i class="material-icons dark-text-3">description</i>Notificaciones</a>
+        </li>
+
+        <li>
+          <a href="#"><i class="material-icons dark-text-3">dashboard</i>Reportes</a>
+        </li>
+        
+        <li>
+          <a href="../html/registro.html"><i class="material-icons dark-text-3">dashboard</i>Registros</a>
+        </li>
+
+        <div class="divider"></div>
+        
+        <li>
+            <a href="../index.html"><i class="material-icons dark-text-3">exit_to_app</i>Salir</a>
+        </li>
+    </ul>
+
+
+
+
+<!--SideNav Finished-->
+
+<div class="content">
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+            <th class="center">Numero de Reporte</th>
+            <th class="center">Nombre</th>
+            <th class="center">Fecha de Emisión</th>
+            <th class="center">Opciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="center">1</td>
+          <td class="center">Reporte de Inscripciones del mes de Enero del 2021</td>
+          <td class="center">01/02/2021</td>
+          <td class="center">
+            <a class="waves-effect waves-light blue btn-small">Ver</a>
+            <a class="waves-effect waves-light green btn-small">Descargar</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="center">2</td>
+          <td class="center">Reporte de Inscripciones del mes de Febrero del 2021</td>
+          <td class="center">01/03/2021</td>
+          <td class="center">
+            <a class="waves-effect waves-light blue btn-small">Ver</a>
+            <a class="waves-effect waves-light green btn-small">Descargar</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="center">3</td>
+          <td class="center">Reporte de Inscripciones del mes de Marzo del 2021</td>
+          <td class="center">01/04/2021</td>
+          <td class="center">
+            <a class="waves-effect waves-light blue btn-small">Ver</a>
+            <a class="waves-effect waves-light green btn-small">Descargar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <div class="row center-align">
+      <div class="col s12 m12">
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+    });
+    </script>
+
+</body>
+
+</html>

@@ -10,19 +10,21 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <title>GimnasioGeminis</title>
+    <title>Gimnasio</title>
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logotipo</a>
+    <div class="navbar-fixed ">
+        <nav class="nav-wraper grey darken-4">
+                <a href="#" class="brand-logo"><img src="../frontend/img/logo.png" width="100px" height="80px" alt=""></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <a href="./html/login.html">Iniciar Sesión</a>
+                    <li><a href="./html/login.html">Iniciar Sesión</a></li>
                 </ul>
-            </div>
-        </nav>    
+        </nav>   
     </div>
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="./html/login.html">Iniciar Sesión</a></li>
+    </ul>
 
     <div class="col s12 m12">
         <div class="slider">
@@ -30,21 +32,21 @@
                 <li>
                     <img src="./img/slider1.jpg">
                     <div class="caption center-align">
-                        <h3>FRASE LLAMATIVA</h3>
+                        <b><h1>FRASE LLAMATIVA</h1></b>
                         <h5 class="light">Texto de visualización para el usuario, con el objetivo de conseguir nuevos clientes.</h5>
                     </div>
                 </li>
                 <li>
                     <img src="./img/slider2.jpg">
                     <div class="caption right-align">
-                        <h3>FRASE LLAMATIVA</h3>
+                        <b><h1>FRASE LLAMATIVA</h1></b>
                         <h5 class="light">Texto de visualización para el usuario, con el objetivo de conseguir nuevos clientes.</h5>
                     </div>
                 </li>
                 <li>
                     <img src="./img/slider3.jpg">
                     <div class="caption left-align">
-                        <h3>FRASE LLAMATIVA</h3>
+                        <b><h1>FRASE LLAMATIVA</h1></b>
                         <h5 class="light">Texto de visualización para el usuario, con el objetivo de conseguir nuevos clientes.</h5>
                     </div>
                 </li>
@@ -52,62 +54,96 @@
         </div>
     </div>
 
-        <div class="col s12 m12 black white-text center">
-            <div class="container">
-                <div class="section">
-                    <h1 class="">Disciplinas</h1>
-                </div>
-            </div>
-        </div>
-
-    <div class="row">
-        <div class="col s6 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="./img/discP.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h5>Nombre de la Disciplina</h5>
-                    <p>Descripción</p>
-                </div>
-                <div class="card-action right-align">
-                    Costo
-                </div>
-            </div>
-        </div>
-
-        <div class="col s6 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="./img/discP.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h5>Nombre de la Disciplina</h5>
-                    <p>Descripción</p>
-                </div>
-                <div class="card-action right-align">
-                    Costo
-                </div>
-            </div>
-        </div>
-
-        <div class="col s6 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="./img/discP.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h5>Nombre de la Disciplina</h5>
-                    <p>Descripción</p>
-                </div>
-                <div class="card-action right-align">
-                    Costo
-                </div>
+    <div class="col s12 m12 grey darken-3 white-text center">
+        <div class="container">
+            <div class="section">
+                <h1 class="">DISCIPLINAS</h1>
             </div>
         </div>
     </div>
-
-
+    
+    <div class="row" style="background-image: url(../frontend/img/fondo1.jpg); background-size: auto;">
+            <div class="col s12 m4" style="padding-top:5%;">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/discP.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5>Nombre de la Disciplina</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus. Quo ipsa quidem quod inventore accusamus, sunt dolores consectetur excepturi illum itaque praesentium earum, nesciunt impedit illo expedita ratione optio?</p>
+                    </div>
+                    <div class="card-action right-align">
+                        Costo
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col s12 m4" style="padding-top:5%;"> 
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/discP.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5>Nombre de la Disciplina</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, obcaecati. Possimus consectetur nobis pariatur quidem dolorem velit, provident ducimus sunt non numquam atque corporis omnis. Similique ducimus quae suscipit sit?</p>
+                    </div>
+                    <div class="card-action right-align">
+                        Costo
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col s12 m4" style="padding-top:5%;">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/discP.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5>Nombre de la Disciplina</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates optio error in obcaecati, velit magni. Cumque quidem voluptas dolorem quos libero, adipisci amet eum nemo repellendus dignissimos, corporis quas!</p>
+                    </div>
+                    <div class="card-action right-align">
+                        Costo
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="white-text">Información del Gimnasio</h5>
+              <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione animi accusantium, soluta commodi repellendus sed pariatur! Sed incidunt doloremque tempore aut, vitae doloribus odio nisi minima repellat cum, at minus!</p>
+    
+    
+            </div>
+            <div class="col l4 s12">
+              <h5 class="white-text">Horarios de Atención</h5>
+              <ul>
+                <li><a class="white-text" href="#">Lunes a Viernes  06:00am - 10:00pm</a></li>
+                <li><a class="white-text" href="#">Sabado           08:00am - 16:00pm</a></li>
+                <li><a class="white-text" href="#">Domingo          09:00am - 14:00pm</a></li>
+                <li><a class="white-text" href="#">Feriados         10:00am - 14:00pm</a></li>
+              </ul>
+            </div>
+            <div class="col l4 s12">
+              <h5 class="white-text">Direcciones y Contactos</h5>
+              <ul>
+                <li><a class="white-text" href="#">Dirección 1: Calle Héroes del Acre, frente a la plaza Gilberto Rojas</a></li>
+                <li><a class="white-text" href="#">Dirección 2: Calle Murillo, frente a la Universidad Boliviana de Informática</a></li>
+                <li><a class="white-text" href="#">Celular: 69795789</a></li>
+                <li><a class="white-text" href="#">Correo: usuario@gymgeminis.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            Derechos reservados. Realizado por:<a class="orange-text text-lighten-3" href="#">Jimmy Calderon</a>
+          </div>
+        </div>
+      </footer>
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -119,6 +155,10 @@
               duration:500,
               interval:5000
           });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
         });
     </script>
 </body>
