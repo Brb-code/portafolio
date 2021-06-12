@@ -1,0 +1,45 @@
+LISTA DE SERVICIOS 
+
+//Sucursal
+- Para seleccionar las disciplinas al momento de realizar la inscripción y así poder generar un reprote de inscripciones completo.
+  GET http://localhost/proyecto/backend/controllers/SucursalController.php 
+
+
+//Usuario
+GET http://localhost/proyecto/backend/controllers/UsuarioController.php
+POST http://localhost/proyecto/backend/controllers/UsuarioController.php
+PUT http://localhost/proyecto/backend/controllers/UsuarioController.php?id_usuario=:id_usuario
+PATCH http://localhost/proyecto/backend/controllers/UsuarioController.php?id_usuario=:id_usuario&campo=:campo
+POST http://localhost/proyecto/backend/controllers/UsuarioController.php?metodo=login
+POST http://localhost/proyecto/backend/controllers/UsuarioController.php?metodo=logout
+
+//Cliente
+GET http://localhost/proyecto/backend/controllers/ClienteController.php?id=:id
+POST http://localhost/proyecto/backend/controllers/ClienteController.php
+PUT http://localhost/proyecto/backend/controllers/ClienteController.php?id_cliente=:id_cliente
+PATCH http://localhost/proyecto/backend/controllers/ClienteController.php?id_cliente=:id_cliente&campo=:campo
+
+//Disciplina
+GET http://localhost/proyecto/backend/controllers/DisciplinaController.php
+GET http://localhost/proyecto/backend/controllers/DisciplinaController.php?id_disciplina=:id_disciplina  
+PUT http://localhost/proyecto/backend/controllers/DisciplinaController.php?id_disciplina=:id_disciplina 
+PATCH http://localhost/proyecto/backend/controllers/DisciplinaController.php?id_disciplina=:id_disciplina&campo=:campo
+
+//Inscripcion
+GET http://localhost/proyecto/backend/controllers/InscripcionController.php
+GET http://localhost/proyecto/backend/controllers/InscripcionController.php?id_inscripcion=:id_inscripcion
+POST http://localhost/proyecto/backend/controllers/InscripcionController.php
+POST http://localhost/proyecto/backend/controllers/InscripcionController.php?id_cliente=:id_cliente
+PUT http://localhost/proyecto/backend/controllers/InscripcionController.php?id_inscripcion=:id_inscripcion
+PATCH http://localhost/proyecto/backend/controllers/InscripcionController.php?id_inscripcion=:id_inscripcion&campo=:campo
+GET http://localhost/proyecto/backend/controllers/InscripcionController.php?metodo=reporte
+
+//Notificacion
+GET http://localhost/proyecto/backend/controllers/NotificacionController.php
+POST http://localhost/proyecto/backend/controllers/NotificacionController.php
+PUT http://localhost/proyecto/backend/controllers/NotificacionController.php?id_notificacion=:id_notificacion
+PATCH http://localhost/proyecto/backend/controllers/NotificacionController.php?id_notificacion=:id_notificacion&campo=:campo
+POST http://localhost/proyecto/backend/controllers/NotificacionController.php?metodo=enviar
+
+
+
